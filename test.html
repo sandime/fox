@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+    /*
     function exampleClass(){
     this.property1 = 5;
     this.property2 = "world";
@@ -18,6 +19,19 @@
     var instance1 = new exampleClass();
     var instance2 = new exampleClass();
     alert(instance1.method1("hello"));
+    */
+
+    //name
+    function welcome(){
+        this.welcomeMessage = "welcome back!";
+        this.name = function name(welcomeName) {
+            return welcomeName + " " + this.welcomeMessage;
+        }
+    }
+    var user1 = new welcome();
+    var user2 = new welcome();
+    alert(user1.name("Hi Sally,"));
+    alert(user2.name("Hi Harry,"));
 </script>
 
 </body>
