@@ -7,33 +7,30 @@
        div#box1 {
            background: mediumvioletred;
            width: 400px;
-           height:200px;
+           height:0px;
        }
     </style>
     <script>
-        function fadeOut(el) {
+        function slideOpen(el) {
             var elem = document.getElementById(el);
-            //using javascript to trigger animations
-            // 1.0s = one second; linear is the timing for transition, can be ease-in, ease-out;
-            //0s is a delay;
-            //transition first, then target the color
-            elem.style.transition = "opacity 1.0s linear 0s";
-            //opacity settings are 0-1
-            elem.style.opacity = 0;
+
+            elem.style.transition = "height 1.0s linear 0s";
+
+            elem.style.height = "200px";
 
         }
-        function fadeIn(el) {
+        function slideClosed(el) {
             var elem = document.getElementById(el);
-            elem.style.transition = "opacity 1.0s linear 0s";
-            elem.style.opacity = 1;
+            elem.style.transition = "height 0.5s linear 0s";
+            elem.style.height = "0px";
         }
 
     </script>
 </head>
 <body>
 
-<button onclick="fadeOut('box1');">Fade Out</button>
-<button onclick="fadeIn('box1');">Fade In</button>
+<button onclick="slideOpen('box1');">Slide Open</button>
+<button onclick="slideClosed('box1');">Slide Close</button>
 
 
 
