@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
 <style>
-    span {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: red;
 
-    }
 /*text shadowing */
      h1 {
          background: #EBB7FF;
@@ -31,10 +26,16 @@
          border: #5BADFF 1px solid;
      }
 
+    /* luminosity */
+     body { background-color: red; }
+    .blended { mix-blend-mode: luminosity; }
+
+
+
 </style>
 </head>
 <body>
-This is content <span>in my document</span>
+
 <h1>Geese fleece the cheese in Greece</h1>
 <p>dogs are happy</p>
 <p>cats like to go camping</p>
@@ -42,5 +43,7 @@ This is content <span>in my document</span>
 
 
 <div id="div1">breezy trees stay breezy </div>
+
+<img class="blended" src="ocean.jpg" alt="ocean">
 </body>
 </html>
