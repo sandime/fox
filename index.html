@@ -9,7 +9,7 @@
            width: 400px;
            height:200px;
            position: absolute;
-           top: 100px;
+           top: 50px;
            left: -400px;
 
        }
@@ -18,13 +18,13 @@
     <script>
         function slideIn(el) {
             var elem = document.getElementById(el);
-            elem.style.transition = "left 1.0s linear 0s";
+            elem.style.transition = "left 0.5s ease-in 0s";
             elem.style.left = "0px";
 
         }
         function slideOut(el) {
             var elem = document.getElementById(el);
-            elem.style.transition = "left 1.0s linear 0s";
+            elem.style.transition = "left 0.5s ease-out 0s";
             elem.style.left = "-400px";
         }
 
