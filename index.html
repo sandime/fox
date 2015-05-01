@@ -8,8 +8,11 @@
            background: mediumvioletred;
            width: 400px;
            height:0px;
+           overflow: hidden;
+
        }
     </style>
+    <!--overflow hides the test when it slides shut -->
     <script>
         function slideOpen(el) {
             var elem = document.getElementById(el);
@@ -31,8 +34,6 @@
 
 <button onclick="slideOpen('box1');">Slide Open</button>
 <button onclick="slideClosed('box1');">Slide Close</button>
-
-
 
 <div id="box1"> foxes in soxes like to play boxes</div>
 </body>
