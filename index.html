@@ -17,14 +17,14 @@
             // 1.0s = one second; linear is the timing for transition, can be ease-in, ease-out;
             //0s is a delay;
             //transition first, then target the color
-            elem.style.transition = "background 1.0s linear 0s";
+            elem.style.transition = "opacity 1.0s linear 0s";
             //opacity settings are 0-1
             elem.style.opacity = 0;
 
         }
         function fadeIn(el) {
             var elem = document.getElementById(el);
-            elem.style.transition = "background 1.0s linear 0s";
+            elem.style.transition = "opacity 1.0s linear 0s";
             elem.style.opacity = 1;
         }
 
