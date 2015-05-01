@@ -10,7 +10,7 @@
     text-decoration-color: red;
 
     }
-
+/*text shadowing */
      h1 {
          background: #EBB7FF;
          padding: 10px;
@@ -19,11 +19,28 @@
          color: #F7C4FB;
          text-shadow: 1px 2px 1px #000, 2px 4px 4px #999;
      }
+/* word spacing */
+     p:nth-child(1){ word-spacing: normal; }
+    p:nth-child(2){ word-spacing: 8px; }
+    p:nth-child(3){ word-spacing: 0.5em; }
+
+    /* padding */
+     #div1 {
+         padding-bottom: 50px;
+         background: #DFEFFF;
+         border: #5BADFF 1px solid;
+     }
 
 </style>
 </head>
 <body>
 This is content <span>in my document</span>
 <h1>Geese fleece the cheese in Greece</h1>
+<p>dogs are happy</p>
+<p>cats like to go camping</p>
+<p>birds like to take a bath</p>
+
+
+<div id="div1">breezy trees stay breezy </div>
 </body>
 </html>
