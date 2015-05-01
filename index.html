@@ -18,12 +18,23 @@
             //0s is a delay;
             //transition first, then target the color
             elem.style.transition = "background 1.0s linear 0s";
+            //opacity settings are 0-1
             elem.style.opacity = 0;
+
         }
+        function fadeIn(el) {
+            var elem = document.getElementById(el);
+            elem.style.transition = "background 1.0s linear 0s";
+            elem.style.opacity = 1;
+        }
+
     </script>
 </head>
 <body>
+
 <button onclick="fadeOut('box1');">Fade Out</button>
+<button onclick="fadeIn('box1');">Fade In</button>
+
 
 
 <div id="box1"> foxes in soxes like to play boxes</div>
